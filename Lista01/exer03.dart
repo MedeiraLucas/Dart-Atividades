@@ -1,14 +1,11 @@
-// Exercício 3 - Lucas Medeira
-// Matéria: ADS / Dart
+
 
 void main() {
 
   String valorTexto = '42';
   
-  
   print('Valor: $valorTexto | antes: ${valorTexto.runtimeType}');
 
-  
   int valorInt = int.parse(valorTexto);
   print('Valor: $valorInt | depois (int): ${valorInt.runtimeType}');
 
