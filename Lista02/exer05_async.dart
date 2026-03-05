@@ -14,11 +14,11 @@ void main() async {
     final resultado = await buscarDadosLentos().timeout(Duration(seconds: 3));
     
     
-    print('✅ Sucesso: $resultado');
+    print(' Sucesso: $resultado');
     
   } on TimeoutException {
     
-    print('⏱️ Aviso: O servidor demorou muito para responder. Por favor, verifique sua conexão ou tente novamente mais tarde.');
+    print(' Aviso: O servidor demorou muito para responder. Por favor, verifique sua conexão ou tente novamente mais tarde.');
     
   } catch (e) {
    

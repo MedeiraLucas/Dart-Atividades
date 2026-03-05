@@ -30,9 +30,8 @@ void main() async {
   await buscarDestaques();
   
   cronometroSequencial.stop();
-  print('⏱️ Tempo Sequencial: ${cronometroSequencial.elapsed.inSeconds} segundos\n');
+  print('Tempo Sequencial: ${cronometroSequencial.elapsed.inSeconds} segundos\n');
 
-  // 2. Execução Paralela (todos ao mesmo tempo)
   print('Iniciando carregamento PARALELO (Future.wait)...');
   final cronometroParalelo = Stopwatch()..start();
   
@@ -46,12 +45,12 @@ void main() async {
   
   cronometroParalelo.stop();
   
-  // O resultado é uma lista contendo os retornos na mesma ordem em que foram chamados
+ 
   final produtos = resultados[0];
   final categorias = resultados[1];
   
-  print('⏱️ Tempo Paralelo: ${cronometroParalelo.elapsed.inSeconds} segundos');
-  print('✅ Dados carregados com sucesso. Exemplo: $produtos, $categorias\n');
+  print(' Tempo Paralelo: ${cronometroParalelo.elapsed.inSeconds} segundos');
+  print(' Dados carregados com sucesso. Exemplo: $produtos, $categorias\n');
   
   print('--- Conclusão ---');
   print('Na execução sequencial, o tempo é a SOMA de todos os atrasos (2+2+2+2 = 8s).');

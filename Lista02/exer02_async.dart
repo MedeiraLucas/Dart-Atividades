@@ -7,7 +7,7 @@ Future<String> buscarUsuario() async {
   bool simularErro = Random().nextBool();
   
   if (simularErro) {
-    // Lança a exceção conforme a dica do exercício
+    
     throw Exception('Falha de conexão com a API.');
   }
 

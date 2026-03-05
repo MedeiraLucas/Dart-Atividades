@@ -17,7 +17,7 @@ Future<String?> buscarDaAPI(String chave) async {
 }
 
 Future<String?> buscarConfiguracao(String chave) async {
-  print('🔍 Solicitando configuração: $chave');
+  print(' Solicitando configuração: $chave');
   
   
   String? resultado = cache[chave] ?? await buscarDaAPI(chave);
