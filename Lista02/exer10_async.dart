@@ -6,13 +6,13 @@ Stream<String> geradorDeEventos() async* {
   final tipos = ['clique', 'scroll', 'input'];
   final random = Random();
 
-  print('📱 Iniciando simulação...\n');
+  print(' Iniciando simulação...\n');
 
   
   for (int i = 1; i <= 5; i++) {
     await Future.delayed(Duration(milliseconds: 500));
     String evento = '${tipos[random.nextInt(tipos.length)]} (ID: $i)';
-    print('👆 Disparado: $evento');
+    print(' Disparado: $evento');
     yield evento;
   }
 
@@ -20,7 +20,7 @@ Stream<String> geradorDeEventos() async* {
   await Future.delayed(Duration(milliseconds: 1500));
 
   String eventoFinal = 'clique (ID: 6)';
-  print('👆 Disparado: $eventoFinal');
+  print(' Disparado: $eventoFinal');
   yield eventoFinal;
 }
 
