@@ -6,14 +6,14 @@ void main() async {
   final int porta = 3000;
   final server = await ServerSocket.bind(InternetAddress.loopbackIPv4, porta);
 
-  print('🚀 Servidor de Chat iniciado na porta $porta.');
+  print(' Servidor de Chat iniciado na porta $porta.');
   print('Aguardando conexões...\n');
 
   List<Socket> clientes = [];
 
   
   server.listen((Socket cliente) {
-    print('✅ Novo cliente conectado: Porta local do cliente é ${cliente.remotePort}');
+    print(' Novo cliente conectado: Porta local do cliente é ${cliente.remotePort}');
     clientes.add(cliente);
 
     
