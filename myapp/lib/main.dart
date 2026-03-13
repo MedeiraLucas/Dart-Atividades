@@ -29,7 +29,7 @@ class MeuCartaoPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFF2F2F2),
       appBar: AppBar(
-        title: const Text('Cartão de Visita Digital'),
+        title: const Text('Cartão de Visita'),
         centerTitle: true,
         backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
