@@ -38,7 +38,7 @@ class DashboardPage extends StatelessWidget {
       {
         'icon': Icons.attach_money,
         'title': 'Faturamento',
-        'value': 'R\$ 5.000',
+        'value': 'R\$ 6.000',
         'color': Colors.green,
       },
       {
@@ -63,7 +63,7 @@ class DashboardPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Dashboard Responsivo'),
+        title: const Text('Dashboard De Vendas'),
         centerTitle: true,
       ),
       drawer: Drawer(
